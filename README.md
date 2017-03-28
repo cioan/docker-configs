@@ -10,6 +10,9 @@ in general, this will get your instance up and running, you will need to install
 docker-compose stop && docker-compose rm -f && docker-compose up --force-recreate --build
 ```
 
+mysql -uroot -p -h 127.0.0.1 -P 3307
+sudo docker inspect openmrsdocker_db_1
+
 ## Containers
 ### openmrs_docker
 

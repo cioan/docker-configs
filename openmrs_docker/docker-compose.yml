@@ -14,11 +14,11 @@ services:
         - "3306:3306"
     volumes:
       - /var/lib/mysql
-#  web:
-#    build:
-#        context: .
-#        dockerfile: Dockerfile-openmrs-web
-#    ports:  
-#        - "8080:8080"
-#    volumes:
-#      - openmrs_dev_web:/var/lib/mysql
+  db:
+    build:
+        context: .
+        dockerfile: Dockerfile-openmrs-web
+    ports:  
+        - "8081:8080"
+    volumes:
+      - /usr/local/tomcat
